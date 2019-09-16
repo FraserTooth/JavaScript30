@@ -95,7 +95,32 @@
     </div>
   </div>
 
-<script>
-</script>
+  <script>
+    const checkboxes = document.querySelectorAll(`.inbox input[type="checkbox"]`)
+    let selectedCheckboxIndex = 0;
+
+    function holdCheckbox(box,boxIndex){
+      box.checked ? selectedCheckboxIndex = boxIndex : selectedCheckboxIndex;
+    }
+
+    function fillCheckBoxes(checkbox,keyTo){
+      let inBetween = false
+      checkboxes.forEach((checkbox,key) => {
+        if(key===keyTo || key===selectedCheckboxIndex){
+          inBetween = !inBetween
+        }
+
+        inBetween ? checkbox.checked = true: false;
+      })
+    }
+
+    checkboxes.forEach((checkbox,key) => {
+      checkbox.addEventListener("click",(e)=>{
+        e.shiftKey ? fillCheckBoxes(checkbox,key) : e;
+        holdCheckbox(checkbox,key)
+      })
+    })
+
+  </script>
 </body>
 </html>
