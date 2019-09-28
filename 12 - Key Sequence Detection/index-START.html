@@ -7,6 +7,19 @@
 </head>
 <body>
 <script>
+  let pressedKeys = [];
+  const secretCode = 'fraser';
+
+
+  window.addEventListener("keyup", (e)=>{
+    pressedKeys.push(e.key)
+    pressedKeys.splice(-secretCode.length-1, pressedKeys.length-secretCode.length)
+    if(pressedKeys.join('')===secretCode){
+      cornify_add()
+    }
+  })
+
+
 </script>
 </body>
 </html>
