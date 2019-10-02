@@ -1,3 +1,9 @@
+## Fraser Tooth - Javascript'29'
+
+Hi there, I completed this course over September 2019, you can see my commits in Github and my solutions in each tasks "index-START" file.
+I mostly followed along with the accompanying videos but occasionally extended the funtionality when I was particularly interested in the topic.
+Also, this was my "Javascript29" as I couldn't get task '21-Geolocation' to work with my Android and Linux machine, hey ho.
+
 ![](https://javascript30.com/images/JS3-social-share.png)
 
 # JavaScript30
